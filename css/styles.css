@@ -788,19 +788,21 @@ ol {
 .order-custom-checkbox {
   width: 16px;
   height: 16px;
-  border: 1px solid var(--navyblue-modal);
-  border-radius: 2px;
-  transition: background-color var(--hover-duration-func),
-    border var(--hover-duration-func), fill var(--hover-duration-func);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* fill: transparent; */
-  fill: none;
   margin-right: 8px;
 }
 
-.order-checkbox:checked + .privacy-policy-text .order-custom-checkbox {
+.custom-checkbox {
+  border: 1px solid var(--navyblue-modal);
+  border-radius: 2px;
+  fill: transparent;
+  transition: background-color var(--hover-duration-func),
+    border var(--hover-duration-func), fill var(--hover-duration-func);
+}
+
+.order-checkbox:checked + .privacy-policy-text .custom-checkbox {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
