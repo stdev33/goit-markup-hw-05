@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--white);
   color: var(--slate);
 }
@@ -97,7 +97,7 @@ ol {
   display: flex;
   align-items: center;
   margin-right: 76px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -140,7 +140,7 @@ ol {
 }
 
 .current::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   left: 0;
@@ -184,7 +184,7 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-bg.jpg");
+    url('../images/hero-bg.jpg');
   max-width: 1440px;
   /* max-width: 100%; */
   background-repeat: no-repeat;
@@ -232,7 +232,7 @@ ol {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -252,7 +252,7 @@ ol {
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid var(--cornflower);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -550,7 +550,7 @@ ol {
   display: inline-block;
   align-items: center;
   margin-bottom: 16px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -633,7 +633,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -798,15 +798,16 @@ ol {
 .order-custom-checkbox {
   width: 16px;
   height: 16px;
-  border: 1px solid var(--navyblue-modal);
   border-radius: 2px;
-  transition: background-color var(--hover-duration-func),
-    border var(--hover-duration-func), fill var(--hover-duration-func);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-policy-link {
@@ -825,7 +826,7 @@ ol {
   display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
