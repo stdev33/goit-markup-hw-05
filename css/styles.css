@@ -777,12 +777,22 @@ ol {
   margin-bottom: 24px;
 }
 
-.order-checkbox {
-  border: none;
-}
-
 .custom-checkbox-label {
   cursor: pointer;
+}
+
+.order-checkbox:checked + .privacy-policy-text .order-custom-checkbox {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.privacy-policy-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  display: block;
 }
 
 .order-custom-checkbox {
@@ -795,31 +805,19 @@ ol {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* fill: transparent; */
-  fill: none;
+  fill: transparent;
   margin-right: 8px;
-}
-
-.order-checkbox:checked + .privacy-policy-text .order-custom-checkbox {
-  background-color: var(--ocean);
-  border: none;
-  fill: var(--cloud);
-}
-
-.order-custom-check-icon {
-}
-
-.privacy-policy-text {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--light-slate);
-  display: block;
 }
 
 .privacy-policy-link {
   color: var(--iris);
   text-decoration: underline;
+  transition: color var(--hover-duration-func);
+}
+
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+  color: var(--ocean);
 }
 
 .order-send-button {
